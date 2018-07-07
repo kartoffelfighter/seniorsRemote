@@ -1,0 +1,413 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MC34063
+LIBS:adxl345
+LIBS:fantimote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title "seniorsRemote (fantimote)"
+Date "2018-07-07"
+Rev "a"
+Comp ""
+Comment1 "GPL-3.0 License"
+Comment2 "author: marc fischer (kartoffelfighter)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS4056 U?
+U 1 1 5B41285D
+P 3400 2650
+F 0 "U?" H 3900 2600 60  0000 C CNN
+F 1 "TPS4056" H 3900 3200 60  0000 C CNN
+F 2 "" H 3600 2700 60  0001 C CNN
+F 3 "" H 3600 2700 60  0001 C CNN
+	1    3400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B4128CB
+P 1950 2850
+F 0 "#PWR?" H 1950 2600 50  0001 C CNN
+F 1 "GND" H 1950 2700 50  0000 C CNN
+F 2 "" H 1950 2850 50  0001 C CNN
+F 3 "" H 1950 2850 50  0001 C CNN
+	1    1950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B41293A
+P 1950 2550
+F 0 "R?" V 2030 2550 50  0000 C CNN
+F 1 "0R0" V 1950 2550 50  0000 C CNN
+F 2 "" V 1880 2550 50  0001 C CNN
+F 3 "" H 1950 2550 50  0001 C CNN
+	1    1950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B412959
+P 1950 1950
+F 0 "R?" V 2030 1950 50  0000 C CNN
+F 1 "N/A" V 1950 1950 50  0000 C CNN
+F 2 "" V 1880 1950 50  0001 C CNN
+F 3 "" H 1950 1950 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5B412977
+P 1950 1600
+F 0 "#PWR?" H 1950 1450 50  0001 C CNN
+F 1 "+BATT" H 1950 1740 50  0000 C CNN
+F 2 "" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1600 1950 1800
+Wire Wire Line
+	1950 2100 1950 2400
+Wire Wire Line
+	1950 2700 1950 2850
+Connection ~ 1950 2250
+$Comp
+L +5V #PWR?
+U 1 1 5B412A50
+P 1750 1600
+F 0 "#PWR?" H 1750 1450 50  0001 C CNN
+F 1 "+5V" H 1750 1740 50  0000 C CNN
+F 2 "" H 1750 1600 50  0001 C CNN
+F 3 "" H 1750 1600 50  0001 C CNN
+	1    1750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B412AB6
+P 1750 1950
+F 0 "R?" V 1830 1950 50  0000 C CNN
+F 1 "N/A" V 1750 1950 50  0000 C CNN
+F 2 "" V 1680 1950 50  0001 C CNN
+F 3 "" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2100 1750 2250
+Connection ~ 1750 2250
+Wire Wire Line
+	1750 1600 1750 1800
+Text Notes 1700 1200 0    60   ~ 0
+Software Disable: \nConnecting TEMP pin to NTC thermistor's output in Lithium ion battery pack. \nIf TEMP pin’s voltage is below 45% or above 80% of supply voltage VIN for more\nthan 0.15S, this means that battery’s temperature is too high or too low, charging\nis suspended. The temperature sense function can be disabled by grounding the TEMP pin
+$Comp
+L R R?
+U 1 1 5B412CA9
+P 2500 2350
+F 0 "R?" V 2580 2350 50  0000 C CNN
+F 1 "2k0" V 2500 2350 50  0000 C CNN
+F 2 "" V 2430 2350 50  0001 C CNN
+F 3 "" H 2500 2350 50  0001 C CNN
+	1    2500 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B412D08
+P 2200 2850
+F 0 "#PWR?" H 2200 2600 50  0001 C CNN
+F 1 "GND" H 2200 2700 50  0000 C CNN
+F 2 "" H 2200 2850 50  0001 C CNN
+F 3 "" H 2200 2850 50  0001 C CNN
+	1    2200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2850 2200 2350
+Wire Wire Line
+	2200 2350 2350 2350
+Wire Wire Line
+	2650 2350 3400 2350
+$Comp
+L GND #PWR?
+U 1 1 5B412D4E
+P 2600 2850
+F 0 "#PWR?" H 2600 2600 50  0001 C CNN
+F 1 "GND" H 2600 2700 50  0000 C CNN
+F 2 "" H 2600 2850 50  0001 C CNN
+F 3 "" H 2600 2850 50  0001 C CNN
+	1    2600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2850 2600 2450
+Wire Wire Line
+	2600 2450 3400 2450
+$Comp
+L +5V #PWR?
+U 1 1 5B412DC4
+P 3000 2700
+F 0 "#PWR?" H 3000 2550 50  0001 C CNN
+F 1 "+5V" H 3000 2840 50  0000 C CNN
+F 2 "" H 3000 2700 50  0001 C CNN
+F 3 "" H 3000 2700 50  0001 C CNN
+	1    3000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B412DE4
+P 3000 2950
+F 0 "C?" H 3025 3050 50  0000 L CNN
+F 1 "100n" H 3025 2850 50  0000 L CNN
+F 2 "" H 3038 2800 50  0001 C CNN
+F 3 "" H 3000 2950 50  0001 C CNN
+	1    3000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B412E15
+P 3000 3200
+F 0 "#PWR?" H 3000 2950 50  0001 C CNN
+F 1 "GND" H 3000 3050 50  0000 C CNN
+F 2 "" H 3000 3200 50  0001 C CNN
+F 3 "" H 3000 3200 50  0001 C CNN
+	1    3000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3200 3000 3100
+Wire Wire Line
+	3000 2700 3000 2800
+Wire Wire Line
+	3000 2750 3250 2750
+Wire Wire Line
+	3250 2750 3250 2550
+Wire Wire Line
+	3250 2550 3400 2550
+Connection ~ 3000 2750
+Text GLabel 5600 2250 2    60   Input ~ 0
+DISABLE_CHARGE
+$Comp
+L R R?
+U 1 1 5B412ED1
+P 5200 2250
+F 0 "R?" V 5280 2250 50  0000 C CNN
+F 1 "N/A" V 5200 2250 50  0000 C CNN
+F 2 "" V 5130 2250 50  0001 C CNN
+F 3 "" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B412EF8
+P 5200 2100
+F 0 "R?" V 5280 2100 50  0000 C CNN
+F 1 "0R0" V 5200 2100 50  0000 C CNN
+F 2 "" V 5130 2100 50  0001 C CNN
+F 3 "" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 2250
+Wire Wire Line
+	4400 2250 5050 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	5350 2250 5600 2250
+$Comp
+L +5V #PWR?
+U 1 1 5B412FD5
+P 5650 1950
+F 0 "#PWR?" H 5650 1800 50  0001 C CNN
+F 1 "+5V" H 5650 2090 50  0000 C CNN
+F 2 "" H 5650 1950 50  0001 C CNN
+F 3 "" H 5650 1950 50  0001 C CNN
+	1    5650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2100 5650 2100
+Wire Wire Line
+	5650 2100 5650 1950
+$Comp
+L +BATT #PWR?
+U 1 1 5B41302A
+P 4800 2800
+F 0 "#PWR?" H 4800 2650 50  0001 C CNN
+F 1 "+BATT" H 4800 2940 50  0000 C CNN
+F 2 "" H 4800 2800 50  0001 C CNN
+F 3 "" H 4800 2800 50  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2550 4500 2550
+Wire Wire Line
+	4500 2550 4500 2900
+Wire Wire Line
+	4500 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 2800
+$Comp
+L R R?
+U 1 1 5B413079
+P 7050 1800
+F 0 "R?" V 7130 1800 50  0000 C CNN
+F 1 "100k" V 7050 1800 50  0000 C CNN
+F 2 "" V 6980 1800 50  0001 C CNN
+F 3 "" H 7050 1800 50  0001 C CNN
+	1    7050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B4130A2
+P 6900 2250
+F 0 "R?" V 6980 2250 50  0000 C CNN
+F 1 "100k" V 6900 2250 50  0000 C CNN
+F 2 "" V 6830 2250 50  0001 C CNN
+F 3 "" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B4130CD
+P 7200 2250
+F 0 "R?" V 7280 2250 50  0000 C CNN
+F 1 "200k" V 7200 2250 50  0000 C CNN
+F 2 "" V 7130 2250 50  0001 C CNN
+F 3 "" H 7200 2250 50  0001 C CNN
+	1    7200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2350 6750 2350
+Wire Wire Line
+	6750 2350 6750 2500
+Wire Wire Line
+	6750 2500 6900 2500
+Wire Wire Line
+	6900 2500 6900 2400
+Wire Wire Line
+	4400 2450 6700 2450
+Wire Wire Line
+	6700 2450 6700 2550
+Wire Wire Line
+	6700 2550 7200 2550
+Wire Wire Line
+	7200 2550 7200 2400
+Wire Wire Line
+	6900 2100 6900 2000
+Wire Wire Line
+	6900 2000 7450 2000
+Wire Wire Line
+	7200 2000 7200 2100
+Wire Wire Line
+	7050 1950 7050 2000
+Connection ~ 7050 2000
+Text GLabel 7450 2000 2    60   Input ~ 0
+CHARGE
+Connection ~ 7200 2000
+$Comp
+L +5V #PWR?
+U 1 1 5B4132A2
+P 7050 1500
+F 0 "#PWR?" H 7050 1350 50  0001 C CNN
+F 1 "+5V" H 7050 1640 50  0000 C CNN
+F 2 "" H 7050 1500 50  0001 C CNN
+F 3 "" H 7050 1500 50  0001 C CNN
+	1    7050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1500 7050 1650
+Text Notes 8100 2000 0    60   ~ 0
+if CHARGE = 5V/2 => charging\nif CHARGE = 5V/3 => standby, charging finished\nif CHARGE = 5V    => no power source connected
+$Comp
+L C C?
+U 1 1 5B4137C5
+P 5300 3150
+F 0 "C?" H 5325 3250 50  0000 L CNN
+F 1 "10µ" H 5325 3050 50  0000 L CNN
+F 2 "" H 5338 3000 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5B41385D
+P 5300 2800
+F 0 "#PWR?" H 5300 2650 50  0001 C CNN
+F 1 "+BATT" H 5300 2940 50  0000 C CNN
+F 2 "" H 5300 2800 50  0001 C CNN
+F 3 "" H 5300 2800 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B41388B
+P 5300 3550
+F 0 "#PWR?" H 5300 3300 50  0001 C CNN
+F 1 "GND" H 5300 3400 50  0000 C CNN
+F 2 "" H 5300 3550 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3000 5300 2800
+Wire Wire Line
+	5300 3300 5300 3550
+Wire Wire Line
+	1750 2250 3400 2250
+Text Notes 3750 2650 0    60   ~ 0
+sop-8
+$EndSCHEMATC

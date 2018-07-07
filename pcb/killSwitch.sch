@@ -1,0 +1,292 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MC34063
+LIBS:adxl345
+LIBS:fantimote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title "seniorsRemote (fantimote)"
+Date "2018-07-07"
+Rev "a"
+Comp ""
+Comment1 "GPL-3.0 License"
+Comment2 "author: marc fischer (kartoffelfighter)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x01 J?
+U 1 1 5B40C4B5
+P 2050 1550
+F 0 "J?" H 2050 1650 50  0000 C CNN
+F 1 "BAT+" H 2050 1450 50  0000 C CNN
+F 2 "" H 2050 1550 50  0001 C CNN
+F 3 "" H 2050 1550 50  0001 C CNN
+	1    2050 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J?
+U 1 1 5B40C51B
+P 2050 2850
+F 0 "J?" H 2050 2950 50  0000 C CNN
+F 1 "BAT-" H 2050 2750 50  0000 C CNN
+F 2 "" H 2050 2850 50  0001 C CNN
+F 3 "" H 2050 2850 50  0001 C CNN
+	1    2050 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5B40C629
+P 2650 1550
+F 0 "F?" V 2730 1550 50  0000 C CNN
+F 1 "Fuse" V 2575 1550 50  0000 C CNN
+F 2 "" V 2580 1550 50  0001 C CNN
+F 3 "" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1550 2500 1550
+$Comp
+L S8050 Q?
+U 1 1 5B40C65D
+P 3750 2250
+F 0 "Q?" H 3950 2325 50  0000 L CNN
+F 1 "S8050" H 3950 2250 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3950 2175 50  0001 L CIN
+F 3 "" H 3750 2250 50  0001 L CNN
+	1    3750 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 2000 0    60   Input ~ 0
+killSwitch
+Wire Wire Line
+	3300 2250 3550 2250
+Wire Wire Line
+	2250 2850 4500 2850
+Wire Wire Line
+	3850 2850 3850 2450
+$Comp
+L GND #PWR?
+U 1 1 5B40C700
+P 4500 1950
+F 0 "#PWR?" H 4500 1700 50  0001 C CNN
+F 1 "GND" H 4500 1800 50  0000 C CNN
+F 2 "" H 4500 1950 50  0001 C CNN
+F 3 "" H 4500 1950 50  0001 C CNN
+	1    4500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2050 3850 1800
+Wire Wire Line
+	3850 1800 4500 1800
+Wire Wire Line
+	4500 1800 4500 1950
+$Comp
+L GNDD #PWR?
+U 1 1 5B40C727
+P 4500 2950
+F 0 "#PWR?" H 4500 2700 50  0001 C CNN
+F 1 "GNDD" H 4500 2825 50  0000 C CNN
+F 2 "" H 4500 2950 50  0001 C CNN
+F 3 "" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2850 4500 2950
+Connection ~ 3850 2850
+Text Notes 4150 3250 0    60   ~ 0
+GNDD = GND USB\n
+$Comp
+L +BATT #PWR?
+U 1 1 5B40C788
+P 3200 1350
+F 0 "#PWR?" H 3200 1200 50  0001 C CNN
+F 1 "+BATT" H 3200 1490 50  0000 C CNN
+F 2 "" H 3200 1350 50  0001 C CNN
+F 3 "" H 3200 1350 50  0001 C CNN
+	1    3200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1350 3200 1550
+Wire Wire Line
+	2800 1550 3300 1550
+$Comp
+L -BATT #PWR?
+U 1 1 5B40C86C
+P 2500 2750
+F 0 "#PWR?" H 2500 2600 50  0001 C CNN
+F 1 "-BATT" H 2500 2890 50  0000 C CNN
+F 2 "" H 2500 2750 50  0001 C CNN
+F 3 "" H 2500 2750 50  0001 C CNN
+	1    2500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2750 2500 2850
+Connection ~ 2500 2850
+$Comp
+L -BATT #PWR?
+U 1 1 5B40C8AA
+P 3750 4250
+F 0 "#PWR?" H 3750 4100 50  0001 C CNN
+F 1 "-BATT" H 3750 4390 50  0000 C CNN
+F 2 "" H 3750 4250 50  0001 C CNN
+F 3 "" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B40C8C6
+P 3600 4800
+F 0 "#PWR?" H 3600 4550 50  0001 C CNN
+F 1 "GND" H 3600 4650 50  0000 C CNN
+F 2 "" H 3600 4800 50  0001 C CNN
+F 3 "" H 3600 4800 50  0001 C CNN
+	1    3600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5B40C8E2
+P 3900 4800
+F 0 "#PWR?" H 3900 4550 50  0001 C CNN
+F 1 "GNDD" H 3900 4675 50  0000 C CNN
+F 2 "" H 3900 4800 50  0001 C CNN
+F 3 "" H 3900 4800 50  0001 C CNN
+	1    3900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 0R0
+U 1 1 5B40C8FE
+P 3750 4550
+F 0 "0R0" V 3830 4550 50  0000 C CNN
+F 1 "R" V 3750 4550 50  0000 C CNN
+F 2 "" V 3680 4550 50  0001 C CNN
+F 3 "" H 3750 4550 50  0001 C CNN
+	1    3750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4250 3750 4400
+Wire Wire Line
+	3600 4700 3900 4700
+Wire Wire Line
+	3900 4700 3900 4800
+Wire Wire Line
+	3600 4700 3600 4800
+Connection ~ 3750 4700
+Wire Notes Line
+	3250 3950 4250 3950
+Wire Notes Line
+	4250 3950 4250 5100
+Wire Notes Line
+	4250 5100 3250 5100
+Wire Notes Line
+	3250 5100 3250 3950
+Text Notes 3350 5050 1    60   ~ 0
+alternative to killSwitch
+Wire Notes Line
+	3400 3950 3400 5100
+Wire Notes Line
+	1550 1350 2350 1350
+Wire Notes Line
+	2350 1350 2350 3150
+Wire Notes Line
+	2350 3150 1550 3150
+Wire Notes Line
+	1550 3150 1550 1350
+Text Notes 1750 2650 1    60   ~ 0
+battery contacts
+$Comp
+L R R?
+U 1 1 5B40CA5D
+P 3300 2000
+F 0 "R?" V 3380 2000 50  0000 C CNN
+F 1 "12k" V 3300 2000 50  0000 C CNN
+F 2 "" V 3230 2000 50  0001 C CNN
+F 3 "" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1550 3300 1850
+Connection ~ 3200 1550
+Wire Wire Line
+	3300 2150 3300 2400
+Connection ~ 3300 2250
+$Comp
+L R R?
+U 1 1 5B40CB3C
+P 2900 2350
+F 0 "R?" V 2980 2350 50  0000 C CNN
+F 1 "12k" V 2900 2350 50  0000 C CNN
+F 2 "" V 2830 2350 50  0001 C CNN
+F 3 "" H 2900 2350 50  0001 C CNN
+	1    2900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L S8050 Q?
+U 1 1 5B40CC60
+P 3200 2600
+F 0 "Q?" H 3400 2675 50  0000 L CNN
+F 1 "S8050" H 3400 2600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3400 2525 50  0001 L CIN
+F 3 "" H 3200 2600 50  0001 L CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2800 3300 2850
+Connection ~ 3300 2850
+Wire Wire Line
+	2900 2500 2900 2600
+Wire Wire Line
+	2900 2600 3000 2600
+Wire Wire Line
+	2850 2000 2900 2000
+Wire Wire Line
+	2900 2000 2900 2200
+$EndSCHEMATC
