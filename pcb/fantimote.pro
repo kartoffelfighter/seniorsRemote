@@ -1,4 +1,4 @@
-update=07.07.2018 22:13:49
+update=08.07.2018 16:40:38
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Users/marc/Google Drive/Projekte/kicadBib/symbols/kicad-symbols
+LibDir=C:/Users/marc/Google Drive/Projekte/kicadBib/symbols/kicad-symbols;C:/Users/marc/Google Drive/Projekte/kicadBib/symbols/scheema
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -63,3 +63,4 @@ LibName31=contrib
 LibName32=valves
 LibName33=C:/Users/marc/Google Drive/bastelstube/kicad_lib/scheema/MC34063
 LibName34=C:/Users/marc/Google Drive/Projekte/kicadBib/symbols/kicad-symbols/adxl345
+LibName35=C:/Users/marc/Google Drive/Projekte/kicadBib/symbols/scheema/ws2812b
