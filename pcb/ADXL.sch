@@ -58,7 +58,7 @@ F 2 "footprints:ADXL3x5" H 4200 2200 50  0001 L CNN
 F 3 "https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf" H 4100 2400 50  0001 C CNN
 F 4 "1853935" H 4200 2100 50  0001 L CNN "Farnell"
 	1    4500 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R701
@@ -69,7 +69,7 @@ F 1 "90k" V 3350 2350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 2350 50  0001 C CNN
 F 3 "" H 3350 2350 50  0001 C CNN
 	1    3350 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R702
@@ -80,7 +80,7 @@ F 1 "45k" V 3350 2850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 2850 50  0001 C CNN
 F 3 "" H 3350 2850 50  0001 C CNN
 	1    3350 2850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3350 2500 3350 2700
@@ -93,26 +93,26 @@ Wire Wire Line
 	3800 2700 4100 2700
 Connection ~ 3800 2600
 $Comp
-L +5V #PWR086
+L +5V #PWR087
 U 1 1 5B426B9B
 P 3350 2100
-F 0 "#PWR086" H 3350 1950 50  0001 C CNN
+F 0 "#PWR087" H 3350 1950 50  0001 C CNN
 F 1 "+5V" H 3350 2240 50  0000 C CNN
 F 2 "" H 3350 2100 50  0001 C CNN
 F 3 "" H 3350 2100 50  0001 C CNN
 	1    3350 2100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR087
+L GND #PWR088
 U 1 1 5B426BB8
 P 3350 3250
-F 0 "#PWR087" H 3350 3000 50  0001 C CNN
+F 0 "#PWR088" H 3350 3000 50  0001 C CNN
 F 1 "GND" H 3350 3100 50  0000 C CNN
 F 2 "" H 3350 3250 50  0001 C CNN
 F 3 "" H 3350 3250 50  0001 C CNN
 	1    3350 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3350 3000 3350 3250
@@ -142,7 +142,7 @@ F 1 "N/A" V 5150 2600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 2600 50  0001 C CNN
 F 3 "" H 5150 2600 50  0001 C CNN
 	1    5150 2600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R704
@@ -153,7 +153,7 @@ F 1 "N/A" V 5150 2700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 2700 50  0001 C CNN
 F 3 "" H 5150 2700 50  0001 C CNN
 	1    5150 2700
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	4900 2600 5000 2600
@@ -169,15 +169,15 @@ Wire Wire Line
 	5550 2700 5300 2700
 Connection ~ 5550 2650
 $Comp
-L GND #PWR088
+L GND #PWR089
 U 1 1 5B426E80
 P 5450 3000
-F 0 "#PWR088" H 5450 2750 50  0001 C CNN
+F 0 "#PWR089" H 5450 2750 50  0001 C CNN
 F 1 "GND" H 5450 2850 50  0000 C CNN
 F 2 "" H 5450 3000 50  0001 C CNN
 F 3 "" H 5450 3000 50  0001 C CNN
 	1    5450 3000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3800 2350 6250 2350
@@ -206,7 +206,7 @@ F 1 "100k" V 6550 3400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 3400 50  0001 C CNN
 F 3 "" H 6550 3400 50  0001 C CNN
 	1    6550 3400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R706
@@ -217,18 +217,18 @@ F 1 "45k" V 6550 3800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 3800 50  0001 C CNN
 F 3 "" H 6550 3800 50  0001 C CNN
 	1    6550 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR089
+L GND #PWR090
 U 1 1 5B42721C
 P 6550 4050
-F 0 "#PWR089" H 6550 3800 50  0001 C CNN
+F 0 "#PWR090" H 6550 3800 50  0001 C CNN
 F 1 "GND" H 6550 3900 50  0000 C CNN
 F 2 "" H 6550 4050 50  0001 C CNN
 F 3 "" H 6550 4050 50  0001 C CNN
 	1    6550 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6550 4050 6550 3950
@@ -243,7 +243,7 @@ F 1 "100k" V 6550 4600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 4600 50  0001 C CNN
 F 3 "" H 6550 4600 50  0001 C CNN
 	1    6550 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R708
@@ -254,18 +254,18 @@ F 1 "45k" V 6550 5000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 5000 50  0001 C CNN
 F 3 "" H 6550 5000 50  0001 C CNN
 	1    6550 5000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR090
+L GND #PWR091
 U 1 1 5B427319
 P 6550 5250
-F 0 "#PWR090" H 6550 5000 50  0001 C CNN
+F 0 "#PWR091" H 6550 5000 50  0001 C CNN
 F 1 "GND" H 6550 5100 50  0000 C CNN
 F 2 "" H 6550 5250 50  0001 C CNN
 F 3 "" H 6550 5250 50  0001 C CNN
 	1    6550 5250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6550 5250 6550 5150
@@ -308,7 +308,7 @@ F 1 "adxl_int2" H 5650 2300 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5650 2050 50  0001 C CNN
 F 3 "" H 5650 2050 50  0001 C CNN
 	1    5650 2050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP701
@@ -319,7 +319,7 @@ F 1 "adxl_int1" H 5300 2300 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5300 2050 50  0001 C CNN
 F 3 "" H 5300 2050 50  0001 C CNN
 	1    5300 2050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP704
@@ -330,7 +330,7 @@ F 1 "ADXL_DATA" H 6350 3550 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6350 3300 50  0001 C CNN
 F 3 "" H 6350 3300 50  0001 C CNN
 	1    6350 3300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP703
@@ -341,7 +341,7 @@ F 1 "ADXL_CLK" H 5950 4800 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5950 4550 50  0001 C CNN
 F 3 "" H 5950 4550 50  0001 C CNN
 	1    5950 4550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 6250 3300
 Wire Wire Line

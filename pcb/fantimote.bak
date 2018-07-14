@@ -31,6 +31,10 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+<<<<<<< HEAD
+=======
+LIBS:MC34063
+>>>>>>> master
 LIBS:adxl345
 LIBS:ws2812b
 LIBS:fantimote-cache
@@ -108,7 +112,11 @@ U 1 1 5B42F98D
 P 10450 1350
 F 0 "U104" H 10450 2100 60  0000 C CNN
 F 1 "mounting_hole" H 10450 750 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 10450 1350 60  0001 C CNN
+=======
+F 2 "" H 10450 1350 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 10450 1350 60  0001 C CNN
 	1    10450 1350
 	1    0    0    -1  
@@ -119,7 +127,11 @@ U 1 1 5B42F9E0
 P 10450 2900
 F 0 "U105" H 10450 3650 60  0000 C CNN
 F 1 "mounting_hole" H 10450 2300 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 10450 2900 60  0001 C CNN
+=======
+F 2 "" H 10450 2900 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 10450 2900 60  0001 C CNN
 	1    10450 2900
 	1    0    0    -1  
@@ -130,7 +142,11 @@ U 1 1 5B42FA18
 P 10450 4450
 F 0 "U106" H 10450 5200 60  0000 C CNN
 F 1 "mounting_hole" H 10450 3850 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 10450 4450 60  0001 C CNN
+=======
+F 2 "" H 10450 4450 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 10450 4450 60  0001 C CNN
 	1    10450 4450
 	1    0    0    -1  
@@ -141,7 +157,11 @@ U 1 1 5B42FA59
 P 9100 4450
 F 0 "U103" H 9100 5200 60  0000 C CNN
 F 1 "mounting_hole" H 9100 3850 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 9100 4450 60  0001 C CNN
+=======
+F 2 "" H 9100 4450 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 9100 4450 60  0001 C CNN
 	1    9100 4450
 	1    0    0    -1  
@@ -152,7 +172,11 @@ U 1 1 5B42FAED
 P 9100 2900
 F 0 "U102" H 9100 3650 60  0000 C CNN
 F 1 "mounting_hole" H 9100 2300 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 9100 2900 60  0001 C CNN
+=======
+F 2 "" H 9100 2900 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 9100 2900 60  0001 C CNN
 	1    9100 2900
 	1    0    0    -1  
@@ -163,7 +187,11 @@ U 1 1 5B42FB2E
 P 9100 1350
 F 0 "U101" H 9100 2100 60  0000 C CNN
 F 1 "mounting_hole" H 9100 750 60  0000 C CNN
+<<<<<<< HEAD
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 9100 1350 60  0001 C CNN
+=======
+F 2 "" H 9100 1350 60  0001 C CNN
+>>>>>>> master
 F 3 "" H 9100 1350 60  0001 C CNN
 	1    9100 1350
 	1    0    0    -1  

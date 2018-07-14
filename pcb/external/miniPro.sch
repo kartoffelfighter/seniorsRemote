@@ -57,7 +57,7 @@ F 1 "ATMEGA328-AU" H 3100 1200 50  0000 L BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 2700 2600 50  0001 C CIN
 F 3 "" H 2700 2600 50  0001 C CNN
 	1    2700 2600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Conn_01x06 J401
@@ -68,7 +68,7 @@ F 1 "FTDI" H 1150 4700 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 1150 5100 50  0001 C CNN
 F 3 "" H 1150 5100 50  0001 C CNN
 	1    1150 5100
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 Text GLabel 1550 5100 2    60   Input ~ 0
 RXI
@@ -85,7 +85,7 @@ F 1 "GND" H 2150 4700 50  0000 C CNN
 F 2 "" H 2150 4850 50  0001 C CNN
 F 3 "" H 2150 4850 50  0001 C CNN
 	1    2150 4850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR021
@@ -96,7 +96,7 @@ F 1 "+5V" H 1850 5140 50  0000 C CNN
 F 2 "" H 1850 5000 50  0001 C CNN
 F 3 "" H 1850 5000 50  0001 C CNN
 	1    1850 5000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 3950 1500 2    60   Input ~ 0
 D8
@@ -151,7 +151,7 @@ F 1 "22k" V 5250 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5180 2500 50  0001 C CNN
 F 3 "" H 5250 2500 50  0001 C CNN
 	1    5250 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R404
@@ -162,7 +162,7 @@ F 1 "22k" V 5450 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5380 2500 50  0001 C CNN
 F 3 "" H 5450 2500 50  0001 C CNN
 	1    5450 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR022
@@ -173,7 +173,7 @@ F 1 "+5V" H 5250 2290 50  0000 C CNN
 F 2 "" H 5250 2150 50  0001 C CNN
 F 3 "" H 5250 2150 50  0001 C CNN
 	1    5250 2150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR023
@@ -184,7 +184,7 @@ F 1 "+5V" H 5450 2290 50  0000 C CNN
 F 2 "" H 5450 2150 50  0001 C CNN
 F 3 "" H 5450 2150 50  0001 C CNN
 	1    5450 2150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Crystal Y401
@@ -195,7 +195,7 @@ F 1 "Crystal" H 5800 1100 50  0000 C CNN
 F 2 "Crystals:Crystal_SMD_SeikoEpson_MC405-2pin_9.6x4.1mm_HandSoldering" H 5800 1250 50  0001 C CNN
 F 3 "" H 5800 1250 50  0001 C CNN
 	1    5800 1250
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L C C403
@@ -206,7 +206,7 @@ F 1 "10p" H 6075 900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 850 50  0001 C CNN
 F 3 "" H 6050 1000 50  0001 C CNN
 	1    6050 1000
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L C C404
@@ -217,7 +217,7 @@ F 1 "10p" H 6075 1350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 1300 50  0001 C CNN
 F 3 "" H 6050 1450 50  0001 C CNN
 	1    6050 1450
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L GND #PWR024
@@ -228,7 +228,7 @@ F 1 "GND" H 6400 1500 50  0000 C CNN
 F 2 "" H 6400 1650 50  0001 C CNN
 F 3 "" H 6400 1650 50  0001 C CNN
 	1    6400 1650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C402
@@ -239,7 +239,7 @@ F 1 "100n" H 1475 2200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1488 2150 50  0001 C CNN
 F 3 "" H 1450 2300 50  0001 C CNN
 	1    1450 2300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR025
@@ -250,7 +250,7 @@ F 1 "GND" H 1450 2400 50  0000 C CNN
 F 2 "" H 1450 2550 50  0001 C CNN
 F 3 "" H 1450 2550 50  0001 C CNN
 	1    1450 2550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR026
@@ -261,7 +261,7 @@ F 1 "GND" H 1650 3900 50  0000 C CNN
 F 2 "" H 1650 4050 50  0001 C CNN
 F 3 "" H 1650 4050 50  0001 C CNN
 	1    1650 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C401
@@ -272,7 +272,7 @@ F 1 "100n" H 1125 1900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1138 1850 50  0001 C CNN
 F 3 "" H 1100 2000 50  0001 C CNN
 	1    1100 2000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR027
@@ -283,7 +283,7 @@ F 1 "GND" H 1100 2150 50  0000 C CNN
 F 2 "" H 1100 2300 50  0001 C CNN
 F 3 "" H 1100 2300 50  0001 C CNN
 	1    1100 2300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR028
@@ -294,7 +294,7 @@ F 1 "+5V" H 1100 1490 50  0000 C CNN
 F 2 "" H 1100 1350 50  0001 C CNN
 F 3 "" H 1100 1350 50  0001 C CNN
 	1    1100 1350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L SW_Push_Dual SW401
@@ -305,7 +305,7 @@ F 1 "RESET" H 5800 3030 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_DIP_x2_W6.15mm_Slide_Omron_A6H" H 5800 3500 50  0001 C CNN
 F 3 "" H 5800 3500 50  0001 C CNN
 	1    5800 3300
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R407
@@ -316,7 +316,7 @@ F 1 "10k" V 5700 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 2500 50  0001 C CNN
 F 3 "" H 5700 2500 50  0001 C CNN
 	1    5700 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR029
@@ -327,7 +327,7 @@ F 1 "+5V" H 5700 2290 50  0000 C CNN
 F 2 "" H 5700 2150 50  0001 C CNN
 F 3 "" H 5700 2150 50  0001 C CNN
 	1    5700 2150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR030
@@ -338,7 +338,7 @@ F 1 "GND" H 5700 3550 50  0000 C CNN
 F 2 "" H 5700 3700 50  0001 C CNN
 F 3 "" H 5700 3700 50  0001 C CNN
 	1    5700 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 6350 2900 2    60   Input ~ 0
 DTR
@@ -351,7 +351,7 @@ F 1 "0,1µF" H 6125 2800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6138 2750 50  0001 C CNN
 F 3 "" H 6100 2900 50  0001 C CNN
 	1    6100 2900
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Conn_01x14 J402
@@ -362,7 +362,7 @@ F 1 "DIGITAL_DEBUG" H 2000 5400 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x14_Pitch2.54mm" H 2000 6200 50  0001 C CNN
 F 3 "" H 2000 6200 50  0001 C CNN
 	1    2000 6200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Conn_01x14 J403
@@ -373,7 +373,7 @@ F 1 "ANALOG_DEBUG" H 2350 5500 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x14_Pitch2.54mm" H 2350 6300 50  0001 C CNN
 F 3 "" H 2350 6300 50  0001 C CNN
 	1    2350 6300
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 Text GLabel 1450 5600 0    60   Input ~ 0
 TXD
@@ -414,7 +414,7 @@ F 1 "+5V" H 3300 6940 50  0000 C CNN
 F 2 "" H 3300 6800 50  0001 C CNN
 F 3 "" H 3300 6800 50  0001 C CNN
 	1    3300 6800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 1450 6800 0    60   Input ~ 0
 D10
@@ -427,7 +427,7 @@ F 1 "+5V" H 850 6840 50  0000 C CNN
 F 2 "" H 850 6700 50  0001 C CNN
 F 3 "" H 850 6700 50  0001 C CNN
 	1    850  6700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR033
@@ -438,7 +438,7 @@ F 1 "GND" H 3500 6850 50  0000 C CNN
 F 2 "" H 3500 7000 50  0001 C CNN
 F 3 "" H 3500 7000 50  0001 C CNN
 	1    3500 7000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 2850 5900 2    60   Input ~ 0
 A0
@@ -475,7 +475,7 @@ F 1 "0R0" V 8500 6050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8430 6050 50  0001 C CNN
 F 3 "" H 8500 6050 50  0001 C CNN
 	1    8500 6050
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Text GLabel 9000 1850 0    60   Input ~ 0
 D2
@@ -530,7 +530,7 @@ F 1 "100k" V 5450 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5380 5450 50  0001 C CNN
 F 3 "" H 5450 5450 50  0001 C CNN
 	1    5450 5450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R406
@@ -541,7 +541,7 @@ F 1 "100k" V 5450 5950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5380 5950 50  0001 C CNN
 F 3 "" H 5450 5950 50  0001 C CNN
 	1    5450 5950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR034
@@ -552,7 +552,7 @@ F 1 "+5V" H 5450 5290 50  0000 C CNN
 F 2 "" H 5450 5150 50  0001 C CNN
 F 3 "" H 5450 5150 50  0001 C CNN
 	1    5450 5150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR035
@@ -563,7 +563,7 @@ F 1 "GND" H 5300 6150 50  0000 C CNN
 F 2 "" H 5300 6300 50  0001 C CNN
 F 3 "" H 5300 6300 50  0001 C CNN
 	1    5300 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +BATT #PWR036
@@ -574,7 +574,7 @@ F 1 "+BATT" H 5150 5290 50  0000 C CNN
 F 2 "" H 5150 5150 50  0001 C CNN
 F 3 "" H 5150 5150 50  0001 C CNN
 	1    5150 5150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R401
@@ -585,7 +585,7 @@ F 1 "100k" V 5150 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 5450 50  0001 C CNN
 F 3 "" H 5150 5450 50  0001 C CNN
 	1    5150 5450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R402
@@ -596,7 +596,7 @@ F 1 "100k" V 5150 5950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 5950 50  0001 C CNN
 F 3 "" H 5150 5950 50  0001 C CNN
 	1    5150 5950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 5700 5700 2    60   Input ~ 0
 measure_vplus
@@ -979,7 +979,7 @@ F 1 "0R0" V 9400 5150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 9330 5150 50  0001 C CNN
 F 3 "" H 9400 5150 50  0001 C CNN
 	1    9400 5150
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R410
@@ -990,7 +990,7 @@ F 1 "0R0" V 9400 5000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 9330 5000 50  0001 C CNN
 F 3 "" H 9400 5000 50  0001 C CNN
 	1    9400 5000
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R409
@@ -1001,7 +1001,7 @@ F 1 "0R0" V 9400 4850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 9330 4850 50  0001 C CNN
 F 3 "" H 9400 4850 50  0001 C CNN
 	1    9400 4850
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	9550 4850 9750 4850
@@ -1036,7 +1036,7 @@ F 1 "ISP_atmega" H 9300 5750 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 9250 5950 50  0001 C CNN
 F 3 "" H 9250 5950 50  0001 C CNN
 	1    9250 5950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP401
@@ -1047,7 +1047,7 @@ F 1 "PB6" H 4700 1300 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4700 1050 50  0001 C CNN
 F 3 "" H 4700 1050 50  0001 C CNN
 	1    4700 1050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP403
@@ -1058,7 +1058,7 @@ F 1 "PB7" H 4950 1300 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4950 1050 50  0001 C CNN
 F 3 "" H 4950 1050 50  0001 C CNN
 	1    4950 1050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4700 1050 4700 1200
@@ -1075,7 +1075,7 @@ F 1 "VPlus" H 5750 5750 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5750 5500 50  0001 C CNN
 F 3 "" H 5750 5500 50  0001 C CNN
 	1    5750 5500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP402
@@ -1086,7 +1086,7 @@ F 1 "VBat" H 4850 5750 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4850 5500 50  0001 C CNN
 F 3 "" H 4850 5500 50  0001 C CNN
 	1    4850 5500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4850 5500 4850 5600
@@ -1113,7 +1113,7 @@ F 1 "+5V" H 9950 5940 50  0000 C CNN
 F 2 "" H 9950 5800 50  0001 C CNN
 F 3 "" H 9950 5800 50  0001 C CNN
 	1    9950 5800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR038
@@ -1124,7 +1124,7 @@ F 1 "GND" H 9950 5950 50  0000 C CNN
 F 2 "" H 9950 6100 50  0001 C CNN
 F 3 "" H 9950 6100 50  0001 C CNN
 	1    9950 6100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	9950 6050 9950 6100
@@ -1139,7 +1139,7 @@ F 1 "GND" H 1050 5850 50  0000 C CNN
 F 2 "" H 1050 6000 50  0001 C CNN
 F 3 "" H 1050 6000 50  0001 C CNN
 	1    1050 6000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1050 5900 1050 6000
@@ -1154,7 +1154,7 @@ F 1 "SDA" H 4600 2950 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4600 2700 50  0001 C CNN
 F 3 "" H 4600 2700 50  0001 C CNN
 	1    4600 2700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP406
@@ -1165,6 +1165,6 @@ F 1 "SCL" H 4600 3150 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4600 2900 50  0001 C CNN
 F 3 "" H 4600 2900 50  0001 C CNN
 	1    4600 2900
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $EndSCHEMATC

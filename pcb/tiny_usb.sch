@@ -57,7 +57,7 @@ F 1 "3V6" H 2250 3500 50  0000 C CNN
 F 2 "Diodes_SMD:D_SMC-RM10_Universal_Handsoldering" H 2250 3600 50  0001 C CNN
 F 3 "" H 2250 3600 50  0001 C CNN
 	1    2250 3600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L D_Zener D1002
@@ -68,7 +68,7 @@ F 1 "3V6" H 2600 3500 50  0000 C CNN
 F 2 "Diodes_SMD:D_SMC-RM10_Universal_Handsoldering" H 2600 3600 50  0001 C CNN
 F 3 "" H 2600 3600 50  0001 C CNN
 	1    2600 3600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R1003
@@ -79,7 +79,7 @@ F 1 "68R" V 3450 3250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3380 3250 50  0001 C CNN
 F 3 "" H 3450 3250 50  0001 C CNN
 	1    3450 3250
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R1002
@@ -90,7 +90,7 @@ F 1 "68R" V 2900 3350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 3350 50  0001 C CNN
 F 3 "" H 2900 3350 50  0001 C CNN
 	1    2900 3350
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R1001
@@ -101,7 +101,7 @@ F 1 "1k5" V 2600 2950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 2530 2950 50  0001 C CNN
 F 3 "" H 2600 2950 50  0001 C CNN
 	1    2600 2950
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L C C1001
@@ -112,18 +112,18 @@ F 1 "100n" H 7125 3100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 7138 3050 50  0001 C CNN
 F 3 "" H 7100 3200 50  0001 C CNN
 	1    7100 3200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L +5V #PWR0107
+L +5V #PWR0108
 U 1 1 5B42A29E
 P 7100 2750
-F 0 "#PWR0107" H 7100 2600 50  0001 C CNN
+F 0 "#PWR0108" H 7100 2600 50  0001 C CNN
 F 1 "+5V" H 7100 2890 50  0000 C CNN
 F 2 "" H 7100 2750 50  0001 C CNN
 F 3 "" H 7100 2750 50  0001 C CNN
 	1    7100 2750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6900 2950 7100 2950
@@ -144,7 +144,7 @@ F 1 "ATTINY85-20SU" H 6550 2800 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6500 3200 50  0001 C CIN
 F 3 "" H 5550 3200 50  0001 C CNN
 	1    5550 3200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 4900 4350 0    60   Input ~ 0
 tiny_MISO
@@ -153,26 +153,26 @@ tiny_MOSI
 Text GLabel 4900 4450 0    60   Input ~ 0
 tiny_SCK
 $Comp
-L +5V #PWR0108
+L +5V #PWR0110
 U 1 1 5B42A43A
 P 6400 4200
-F 0 "#PWR0108" H 6400 4050 50  0001 C CNN
+F 0 "#PWR0110" H 6400 4050 50  0001 C CNN
 F 1 "+5V" H 6400 4340 50  0000 C CNN
 F 2 "" H 6400 4200 50  0001 C CNN
 F 3 "" H 6400 4200 50  0001 C CNN
 	1    6400 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR0109
+L GND #PWR0111
 U 1 1 5B42A45E
 P 6400 4600
-F 0 "#PWR0109" H 6400 4350 50  0001 C CNN
+F 0 "#PWR0111" H 6400 4350 50  0001 C CNN
 F 1 "GND" H 6400 4450 50  0000 C CNN
 F 2 "" H 6400 4600 50  0001 C CNN
 F 3 "" H 6400 4600 50  0001 C CNN
 	1    6400 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 4900 4550 0    60   Input ~ 0
 tiny_RESET
@@ -185,7 +185,7 @@ F 1 "ISP_tiny" H 5600 4250 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 5550 4450 50  0001 C CNN
 F 3 "" H 5550 4450 50  0001 C CNN
 	1    5550 4450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4900 4350 5350 4350
@@ -242,15 +242,15 @@ Connection ~ 2250 3350
 Wire Wire Line
 	2250 3750 2250 3950
 $Comp
-L +5V #PWR0110
+L +5V #PWR0114
 U 1 1 5B42ABD2
 P 2600 2650
-F 0 "#PWR0110" H 2600 2500 50  0001 C CNN
+F 0 "#PWR0114" H 2600 2500 50  0001 C CNN
 F 1 "+5V" H 2600 2790 50  0000 C CNN
 F 2 "" H 2600 2650 50  0001 C CNN
 F 3 "" H 2600 2650 50  0001 C CNN
 	1    2600 2650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2600 2650 2600 2800
@@ -263,7 +263,7 @@ F 1 "0R0" V 4150 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 2500 50  0001 C CNN
 F 3 "" H 4150 2500 50  0001 C CNN
 	1    4150 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R1005
@@ -274,7 +274,7 @@ F 1 "0R0" V 4000 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3930 2500 50  0001 C CNN
 F 3 "" H 4000 2500 50  0001 C CNN
 	1    4000 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4000 2650 4000 2950
@@ -291,7 +291,7 @@ F 1 "0R0" V 3850 2500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3780 2500 50  0001 C CNN
 F 3 "" H 3850 2500 50  0001 C CNN
 	1    3850 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3850 2650 3850 3150
@@ -317,7 +317,7 @@ F 1 "USB_D+" H 2200 3200 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 2200 2950 50  0001 C CNN
 F 3 "" H 2200 2950 50  0001 C CNN
 	1    2200 2950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP1001
@@ -328,7 +328,7 @@ F 1 "USB_D-" H 1950 3350 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1950 3100 50  0001 C CNN
 F 3 "" H 1950 3100 50  0001 C CNN
 	1    1950 3100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1950 3100 1950 3250
@@ -345,7 +345,7 @@ F 1 "tiny_RESET" H 3850 4200 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 3850 3950 50  0001 C CNN
 F 3 "" H 3850 3950 50  0001 C CNN
 	1    3850 3950
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 Wire Wire Line
 	3850 3950 3850 3450
@@ -359,7 +359,7 @@ F 1 "RXD" H 4450 2500 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4450 2250 50  0001 C CNN
 F 3 "" H 4450 2250 50  0001 C CNN
 	1    4450 2250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP1005
@@ -370,7 +370,7 @@ F 1 "TXI" H 4650 2550 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4650 2300 50  0001 C CNN
 F 3 "" H 4650 2300 50  0001 C CNN
 	1    4650 2300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L TEST TP1006
@@ -381,7 +381,7 @@ F 1 "DTR" H 4850 2600 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4850 2350 50  0001 C CNN
 F 3 "" H 4850 2350 50  0001 C CNN
 	1    4850 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4450 2250 4450 2300
@@ -407,36 +407,36 @@ Wire Wire Line
 	4850 2500 4850 2350
 Connection ~ 3850 2300
 $Comp
-L GNDD #PWR0111
+L GNDD #PWR?
 U 1 1 5B43D4EC
 P 7100 3750
-F 0 "#PWR0111" H 7100 3500 50  0001 C CNN
+F 0 "#PWR?" H 7100 3500 50  0001 C CNN
 F 1 "GNDD" H 7100 3625 50  0000 C CNN
 F 2 "" H 7100 3750 50  0001 C CNN
 F 3 "" H 7100 3750 50  0001 C CNN
 	1    7100 3750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GNDD #PWR0112
+L GNDD #PWR?
 U 1 1 5B43D607
 P 2600 3950
-F 0 "#PWR0112" H 2600 3700 50  0001 C CNN
+F 0 "#PWR?" H 2600 3700 50  0001 C CNN
 F 1 "GNDD" H 2600 3825 50  0000 C CNN
 F 2 "" H 2600 3950 50  0001 C CNN
 F 3 "" H 2600 3950 50  0001 C CNN
 	1    2600 3950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GNDD #PWR0113
+L GNDD #PWR?
 U 1 1 5B43D667
 P 2250 3950
-F 0 "#PWR0113" H 2250 3700 50  0001 C CNN
+F 0 "#PWR?" H 2250 3700 50  0001 C CNN
 F 1 "GNDD" H 2250 3825 50  0000 C CNN
 F 2 "" H 2250 3950 50  0001 C CNN
 F 3 "" H 2250 3950 50  0001 C CNN
 	1    2250 3950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $EndSCHEMATC

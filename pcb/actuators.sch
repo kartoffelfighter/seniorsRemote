@@ -57,40 +57,40 @@ F 1 "WS2812B" H 3750 3200 60  0000 C CNN
 F 2 "footprints:WS2812B" V 3700 2800 60  0001 C CNN
 F 3 "" V 3700 2800 60  0000 C CNN
 	1    3750 2800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L +5V #PWR099
+L +5V #PWR0100
 U 1 1 5B4275DD
 P 2600 2250
-F 0 "#PWR099" H 2600 2100 50  0001 C CNN
+F 0 "#PWR0100" H 2600 2100 50  0001 C CNN
 F 1 "+5V" H 2600 2390 50  0000 C CNN
 F 2 "" H 2600 2250 50  0001 C CNN
 F 3 "" H 2600 2250 50  0001 C CNN
 	1    2600 2250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR0100
+L GND #PWR0101
 U 1 1 5B4275F3
 P 2600 3100
-F 0 "#PWR0100" H 2600 2850 50  0001 C CNN
+F 0 "#PWR0101" H 2600 2850 50  0001 C CNN
 F 1 "GND" H 2600 2950 50  0000 C CNN
 F 2 "" H 2600 3100 50  0001 C CNN
 F 3 "" H 2600 3100 50  0001 C CNN
 	1    2600 3100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR0101
+L GND #PWR0102
 U 1 1 5B42760B
 P 4450 3100
-F 0 "#PWR0101" H 4450 2850 50  0001 C CNN
+F 0 "#PWR0102" H 4450 2850 50  0001 C CNN
 F 1 "GND" H 4450 2950 50  0000 C CNN
 F 2 "" H 4450 3100 50  0001 C CNN
 F 3 "" H 4450 3100 50  0001 C CNN
 	1    4450 3100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C901
@@ -101,7 +101,7 @@ F 1 "100n" H 2625 2750 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2638 2700 50  0001 C CNN
 F 3 "" H 2600 2850 50  0001 C CNN
 	1    2600 2850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2600 3000 2600 3100
@@ -127,18 +127,18 @@ F 1 "100k" V 4350 2300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4280 2300 50  0001 C CNN
 F 3 "" H 4350 2300 50  0001 C CNN
 	1    4350 2300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L +5V #PWR0102
+L +5V #PWR0103
 U 1 1 5B42858C
 P 4350 2050
-F 0 "#PWR0102" H 4350 1900 50  0001 C CNN
+F 0 "#PWR0103" H 4350 1900 50  0001 C CNN
 F 1 "+5V" H 4350 2190 50  0000 C CNN
 F 2 "" H 4350 2050 50  0001 C CNN
 F 3 "" H 4350 2050 50  0001 C CNN
 	1    4350 2050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4350 2450 4350 2600
@@ -154,18 +154,18 @@ F 1 "USB_OTG" H 6850 2950 50  0000 L CNN
 F 2 "Connectors_USB:USB_Micro-B_Wuerth-629105150521" H 7200 2550 50  0001 C CNN
 F 3 "" H 7200 2550 50  0001 C CNN
 	1    7050 2600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GNDD #PWR0103
+L GNDD #PWR0104
 U 1 1 5B428D7E
 P 7050 3800
-F 0 "#PWR0103" H 7050 3550 50  0001 C CNN
+F 0 "#PWR0104" H 7050 3550 50  0001 C CNN
 F 1 "GNDD" H 7050 3675 50  0000 C CNN
 F 2 "" H 7050 3800 50  0001 C CNN
 F 3 "" H 7050 3800 50  0001 C CNN
 	1    7050 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7050 3800 7050 3000
@@ -178,7 +178,7 @@ F 1 "1µ" H 6925 3150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 6938 3100 50  0001 C CNN
 F 3 "" H 6900 3250 50  0001 C CNN
 	1    6900 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6950 3000 6950 3050
@@ -192,15 +192,15 @@ Wire Wire Line
 	6900 3500 7050 3500
 Connection ~ 7050 3500
 $Comp
-L +5VD #PWR0104
+L +5VD #PWR0105
 U 1 1 5B428E94
 P 7800 2250
-F 0 "#PWR0104" H 7800 2100 50  0001 C CNN
+F 0 "#PWR0105" H 7800 2100 50  0001 C CNN
 F 1 "+5VD" H 7800 2390 50  0000 C CNN
 F 2 "" H 7800 2250 50  0001 C CNN
 F 3 "" H 7800 2250 50  0001 C CNN
 	1    7800 2250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7800 2250 7800 2400
@@ -223,7 +223,7 @@ F 1 "Vibration_motor" H 4300 4900 50  0000 L TNN
 F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to2512_RM10_HandSoldering" H 4200 5010 50  0001 C CNN
 F 3 "" H 4200 5010 50  0001 C CNN
 	1    4200 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L S8050 Q901
@@ -234,18 +234,18 @@ F 1 "S8050" H 4300 5800 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4300 5725 50  0001 L CIN
 F 3 "" H 4100 5800 50  0001 L CNN
 	1    4100 5800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L GND #PWR0105
+L GND #PWR0106
 U 1 1 5B4298ED
 P 4200 6200
-F 0 "#PWR0105" H 4200 5950 50  0001 C CNN
+F 0 "#PWR0106" H 4200 5950 50  0001 C CNN
 F 1 "GND" H 4200 6050 50  0000 C CNN
 F 2 "" H 4200 6200 50  0001 C CNN
 F 3 "" H 4200 6200 50  0001 C CNN
 	1    4200 6200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4200 5400 4200 5600
@@ -260,18 +260,18 @@ F 1 "0R0" V 4200 4600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4130 4600 50  0001 C CNN
 F 3 "" H 4200 4600 50  0001 C CNN
 	1    4200 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L +5V #PWR0106
+L +5V #PWR0107
 U 1 1 5B429990
 P 4200 4250
-F 0 "#PWR0106" H 4200 4100 50  0001 C CNN
+F 0 "#PWR0107" H 4200 4100 50  0001 C CNN
 F 1 "+5V" H 4200 4390 50  0000 C CNN
 F 2 "" H 4200 4250 50  0001 C CNN
 F 3 "" H 4200 4250 50  0001 C CNN
 	1    4200 4250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4200 4250 4200 4450
@@ -286,7 +286,7 @@ F 1 "0R0" V 3450 5800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3380 5800 50  0001 C CNN
 F 3 "" H 3450 5800 50  0001 C CNN
 	1    3450 5800
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	3900 5800 3600 5800
@@ -303,7 +303,7 @@ F 1 "WS2812" H 4750 2500 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 4750 2250 50  0001 C CNN
 F 3 "" H 4750 2250 50  0001 C CNN
 	1    4750 2250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4750 2250 4450 2250
@@ -319,7 +319,7 @@ F 1 "motor" H 3750 5750 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 3750 5500 50  0001 C CNN
 F 3 "" H 3750 5500 50  0001 C CNN
 	1    3750 5500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3750 5500 3750 5800
@@ -333,7 +333,7 @@ F 1 "DOUT_WS2812" H 3050 3550 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 3050 3300 50  0001 C CNN
 F 3 "" H 3050 3300 50  0001 C CNN
 	1    3050 3300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3150 3000 3150 3350
