@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\marc\\.platformio\\penv\\Scripts;C:\\Users\\marc\\.platformio\\penv;C:\\WINDOWS;C:\\WinAVR\\bin;C:\\Users\\marc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\marc\\AppData\\Roaming\\curl\\bin;C:\\Users\\marc\\AppData\\Roaming\\npm;C:\\Program Files\\LLVM\\bin;C:\\WINDOWS;C:\\WinAVR\\bin;C:\\Users\\marc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\marc\\AppData\\Roaming\\curl\\bin;C:\\Users\\marc\\AppData\\Roaming\\npm;C:\\Program Files\\LLVM\\bin",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "python.linting.pylintEnabled": false
+}
