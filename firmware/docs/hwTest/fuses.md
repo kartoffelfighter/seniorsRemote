@@ -9,14 +9,15 @@
     	Serial program downloading SPI enabled
     	Brown out detection level at VCC = 2.7V
 
-    
+​    
 
     **Config: **
-
+    
     `LOW: 0xE2`
-
-    ` High: 0xD3` 
-
+    
+    ` High: 0xDE` 
+    
     ` Extended: 0x05`
 
-    
+
+​    

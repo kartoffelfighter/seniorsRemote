@@ -10,6 +10,23 @@ To wake up again and serve the functionallity there are two ways to trigger an i
 
 
 
+## Interrupt response time
+
+the general response time to interrupts is four clock cycles minimum. 
+if controller is in sleep the response time increases by minum four clock cycles
+the time until the interrupt routine is run increases by the general startup time after sleep
+
+Calculated means this at minimum:
+
+1S/8000Hz*4 = 0,5mS per four clock cycles, 
+0,5mS * 4 = 2mS for interrupt response time after sleep (+ boot time)
+
+
+
+So in fact, the signal which interrupts needs to be held for at least 2mS (this means a frequenzy of 500Hz is possible)
+
+
+
 ## ADXL INT1 INT2
 
 The on-board gyrometer ADXL is connected to ISR_ADXL (PD3, INT1).
