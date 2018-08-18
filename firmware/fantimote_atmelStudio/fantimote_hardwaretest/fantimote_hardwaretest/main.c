@@ -1,6 +1,7 @@
 /*//
-* fantimote_hardwaretest.c
+* fantimote_hardwaretest
 *
+* main.c
 * Created: 15.08.2018 13:14:56
 * Author : marc
 * Fuse Config:
@@ -17,72 +18,106 @@ Brown out detection level at VCC = 2.7V
 */
 
 
-// -----------------------------------------------------
-// set F_CPU
-#ifndef F_CPU
-#warning "CPU speed was defined in main.c"
-#define F_CPU 8000000L	// Clock speed of Oscillator
-#endif
-// -----------------------------------------------------
-
 #include <avr/io.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <util/delay.h> // delay function
 #include <avr/interrupt.h>
 
 //#include "lib/i2c.h"
 //#include "lib/adxl345.h"
 
-
-//-----------------------------------------------------
-// Baud Rate definition for USART
-
-
-#define BAUD 9600UL	// Baud speed for UART0
+#include "config.h" // include config file
+#include "main.h" // main header file
+#include "wsLED.h"	// ws8212b color code
 
 #include <util/setbaud.h>	// automatic baud calculator lib
-// #define myBAUD FOSC/16/BAUD-1	// calculating my baud rate (Datasheet p230)
+// #define myBAUD FOSC/16/BAUD-1	// calculating my baud rate (Data sheet p230)
 
 
 //----------------------------------------------------
-
-//----------------------------------------------------
-// header
-void PinConfig();	// Pin Configuration
-
-void USART_Init(void);		// initialisation for USART (Datasheet p230)
-int USART_transmit(unsigned char data, FILE *stream);	// transmit a single char
-void USART_transmit_string(char *s);		// transmit a string
-int en_interrupts(void);	// enables the used interrupts to wake the fantimote (here: interrupts send to serial)
-
+uint32_t runtimeLow = 0;	// in 250µS steps until 1mS
+uint32_t runtimeHigh = 0;	// in 1mS steps
 //---------------------------------------------------
 // routines
 
 ISR(INT0_vect){
+	#if(UART >= 80)
 	printf("INT0 triggered!");
+	#endif
 }
 ISR(INT1_vect){
+	#if(UART >= 80)
 	printf("INT1 triggered!");
+	#endif
+}
+ISR(TIMER2_COMPA_vect){
+	runtimeLow += 250;
+	if(runtimeLow >= 1000){
+		if(runtimeLow <= 1250){
+			runtimeHigh++;
+			runtimeLow = 0;
+		}
+		else {
+			printf("[DANGER][TIMER ERROR] loop took longer than 250mS, time incorrect, restarting..."); // test this code, maybe different implantation is needed if error is thrown at recording IR Code
+			for(;;);// ever
+		}
+	}
 }
 
 
 int main(void)
 {
+	//wdt_off();
 	USART_Init();
-	FILE str_uart = FDEV_SETUP_STREAM(USART_transmit, NULL, _FDEV_SETUP_WRITE);
+	struct __file str_uart = FDEV_SETUP_STREAM(USART_transmit, NULL, _FDEV_SETUP_WRITE);
 	stdout = &str_uart;
+	
+	helloFromWs();
 
-	
-	printf("hello, world \n");
+	#if UART >= 0
+		printf("hello, world \n");
+	#endif
+
+	#if UART >= 90	// output compiler information
+		printf("Information: \n");
+		printf("Input file: ");  printf(__FILE__); printf("\n");
+		printf("Compile Time: "); printf(__TIME__); printf("Date: "); printf(__DATE__); printf("\n");
+		printf("UART Output level: "); printf(UART); printf("\n");
+	#endif
+
+	#if UART >= 80
 	printf("enabling interrupts \n");
-	en_interrupts();
+	#endif
+	if(en_interrupts() > 0 ) {
+		#if UART >= 80
+		printf("enabled external interrupts! \n");
+		#endif
+	}
+	if(en_timer() > 0) {
+		#if UART >= 80
+		printf("enabled timer2 \n");
+		#endif
+	}
 	
-	/* Replace with your application code */
+	#if UART >= 90
+		uint32_t prev = 0;
+	#endif
+	
+	
 	while (1)	// loop
 	{
-		printf("fantimote alive! \n");
-		_delay_ms(1000);
+		if(runtimeHigh >= 1000){
+			if(runtimeHigh <= 10000) {
+			printf(". \n");
+			}
+		}
+		#if UART >= 90
+		if(runtimeHigh - prev >= 10000) {		
+				printf("10s Heartbeat \n");
+			prev = runtimeHigh;
+		}
+		#endif
+		
 	}
 }
 
@@ -135,7 +170,7 @@ void USART_Init(){
 
 }
 
-int USART_transmit(unsigned char data, FILE *stream){
+int USART_transmit(char data, FILE *stream){
 	while(!(UCSR0A&(1<<UDRE0))); // wait until transmit buffer is empty
 		UDR0 = data; // write data to transmit buffer
 	return 0;
@@ -183,3 +218,17 @@ int en_interrupts(void){	// enables the used interrupts to wake the fantimote (h
 }
 
 
+int en_timer(void){
+	OCR2A = 62; // 0110 0010
+	TCCR2A |= (1<<WGM21);	// set to ctc mode
+	TIMSK2 |= (1<<OCIE2A);	//Set interrupt on compare
+	TCCR2B = 0x03; // prescaler to 32 (means 250µs per overflow @ 8MHz)
+	
+	return 1;
+}
+
+void wdt_off(void) {
+	MCUSR &= ~(1<<WDRF);
+	WDTCSR |= (1<<WDCE) | (1<<WDE);
+	WDTCSR = 0x00;	
+}
